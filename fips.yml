@@ -1,0 +1,9 @@
+#
+# fips-openvr
+#
+---
+exports:
+  header-dirs:
+    - openvr/headers
+  modules:
+    openvr_api: .
