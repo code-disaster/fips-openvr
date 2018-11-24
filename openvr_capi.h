@@ -41,8 +41,8 @@ struct ovr_t
     VR_IVRSystem* hmd;
     VR_IVRRenderModels* render_models;
     VR_IVRCompositor* compositor;
-    char system_name[128];
-    char serial_number[128];
+    char system_name[64];
+    char serial_number[64];
 };
 
 EVRInitError ovr_setup(struct ovr_t* ovr);
