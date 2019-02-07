@@ -7,8 +7,6 @@
  */
 #include "openvr_capi.h"
 
-#define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 
 static const char* VR_IVRFnTable_Prefix = "FnTable:";
@@ -19,7 +17,7 @@ static TrackedPropertyError ovr_get_device_string(char* buffer, uint32_t len,
                                                   TrackedDeviceProperty property)
 {
     TrackedPropertyError error;
-    const uint32_t required = hmd->GetStringTrackedDeviceProperty(device, property, buffer, len, &error);
+    /*const uint32_t required = */hmd->GetStringTrackedDeviceProperty(device, property, buffer, len, &error);
     return error;
 }
 
